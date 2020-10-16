@@ -1,0 +1,33 @@
+@import '../css/normalize.scss';
+//Mixins
+@mixin font-lato {
+font-family: 'Lato', sans-serif;
+}
+@mixin font-montserrat{
+font-family: 'Montserrat', sans-serif;
+}
+@mixin font-roboto{
+    font-family: 'Roboto', sans-serif;
+    }
+// /Mixins
+
+// Variables
+$color-secondary: #414141;
+// /Variables
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    @include font-roboto;
+}
+.section-inner {
+    width: 1100px;
+    margin: 0 auto;
+}
+h3,h5, p {
+    margin: 0;
+}
