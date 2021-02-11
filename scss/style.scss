@@ -8,26 +8,75 @@ font-family: 'Montserrat', sans-serif;
 }
 @mixin font-roboto{
     font-family: 'Roboto', sans-serif;
-    }
+}
 // /Mixins
 
-// Variables
-$color-secondary: #414141;
-// /Variables
-
+// COMMON
 * {
     box-sizing: border-box;
 }
-html, body {
-    height: 100%;
-}
+
 body {
     @include font-roboto;
+    font-weight: 400;
 }
+
 .section-inner {
-    width: 1100px;
+    max-width: 956px;
     margin: 0 auto;
 }
+
 h3,h5, p {
     margin: 0;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+// /COMMON
+.section-header {
+    box-shadow: 0 3px 4px #F2F2F2;
+}
+.header-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.main-logo {
+    margin-right: auto;
+}
+
+.header-login {
+    padding: 14px 20px;
+    border: 1px solid #E0E0E0;
+    color: #1D1D1D;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.basket {
+    width: 19px;
+    height: 22px;
+    margin-left: 27px;
+    background: url("/img/basket.svg") no-repeat;
+}
+.restaurant-header {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+// CARD
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+// /CARD
