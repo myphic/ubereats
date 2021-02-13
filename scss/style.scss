@@ -78,5 +78,86 @@ ul {
     justify-content: space-between;
 }
 
+.card-item {
+    margin-bottom: 15px;
+    &__img {
+        padding-bottom: 15px;
+    }
+    &__header {
+        font-size: 16px;
+        line-height: 24px;
+        color: #1D1D1D;
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 21px;
+        color: #626262;
+    }
+    &__header,&__description {
+        padding-bottom: 5px;
+    }
+    &__time {
+        padding-bottom: 20px;
+        font-size: 13px;
+        line-height: 21px;
+    }
+}
 
 // /CARD
+
+// FOOTER
+
+.section-footer {
+    background: #262626;
+}
+.footer-nav {
+   
+    &__list {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    &__link {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &__item {
+        flex: 1 1 16px;
+        list-style: none;
+        padding-bottom: 23px;
+    }
+    &__select {
+        height: 40px;
+        
+    }
+}
+.footer-select {
+    padding-bottom: 30px;
+}
+.link_big {
+    font-size: 16px;
+    line-height: 19px;
+}
+.social-list {
+    display: flex;
+    &__facebook {
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/facebook.svg");
+    }
+    &__twitter {
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/twitter.svg");
+    }
+    &__instagram {
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/instagram.svg");
+    }
+}
+// /FOOTER
