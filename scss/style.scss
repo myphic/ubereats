@@ -34,6 +34,21 @@ ul {
     padding: 0;
     list-style: none;
 }
+
+.main-input {
+    opacity: 50%;
+    font-size: 16px;
+    font-weight: 24px;
+    border: 0;
+    outline: none;
+    width: 100%;
+}
+.input-container {
+    border-bottom: 1px solid #757575;
+    opacity: 30%;
+    margin-bottom: 55px;
+    margin-top: 55px;
+}
 // /COMMON
 .section-header {
     box-shadow: 0 3px 4px #F2F2F2;
@@ -58,6 +73,13 @@ ul {
     line-height: 24px;
 }
 
+.header-login:hover {
+    color: white;
+    background-color: black;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
 .basket {
     width: 19px;
     height: 22px;
@@ -70,6 +92,17 @@ ul {
     line-height: 34px;
 }
 
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: outline;
+    color: red;
+}
+
+.restaurant-header {
+    margin-bottom: 15px;
+}
 // CARD
 
 .card-list {
@@ -113,31 +146,45 @@ ul {
 .footer-nav {
    
     &__list {
-        height: 200px;
+        margin-top: 30px;
+        
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         flex-wrap: wrap;
     
     }
     &__link {
         color: white;
-        text-decoration: none;
         font-size: 13px;
         line-height: 16px;
     }
     &__item {
-        flex: 1 1 16px;
+        //flex: 1 1 308px;
+        width: 308px;
+        height: 220px;
         list-style: none;
-        padding-bottom: 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 45px;
     }
     &__select {
+        width: 227px;
         height: 40px;
-        
+        background: #3B3B3B;
+        color: white;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &__white-logo {
+        padding-top: 55px;
+    }
+    & hr {
+        opacity: 40%;
+        height: 1px;
     }
 }
-.footer-select {
-    padding-bottom: 30px;
-}
+
 .link_big {
     font-size: 16px;
     line-height: 19px;
@@ -146,18 +193,62 @@ ul {
     display: flex;
     &__facebook {
         width: 24px;
-        height: 24px;
-        background-image: url("../img/facebook.svg");
+        height: 24px;   
     }
     &__twitter {
         width: 24px;
         height: 24px;
-        background-image: url("../img/twitter.svg");
     }
     &__instagram {
         width: 24px;
         height: 24px;
-        background-image: url("../img/instagram.svg");
     }
+}
+.link_big {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.downloads {
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        li:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+    &__applestore {
+        width: 120px;
+        height: 40px;   
+    }
+    &__googleplay {
+        width: 135px;
+        height: 40px;
+    }
+}
+
+.conditions {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 308px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        a {
+            font-size: 11px;
+            line-height: 13px;
+            color: white;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+    }
+ 
 }
 // /FOOTER
