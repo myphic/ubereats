@@ -411,6 +411,9 @@ a:hover {
 .section-footer {
   background: #262626; }
 
+.footer-nav__white-logo {
+  padding-bottom: 40px; }
+
 .footer-nav__list {
   margin-top: 30px;
   display: flex;
@@ -421,6 +424,8 @@ a:hover {
   color: white;
   font-size: 13px;
   line-height: 16px; }
+  .footer-nav__link--green {
+    color: #49A144; }
 
 .footer-nav__item {
   width: 308px;
@@ -498,3 +503,23 @@ a:hover {
   .conditions__item a:hover {
     text-decoration: underline;
     color: red; }
+
+@media (max-width: 768px) {
+  .header-login {
+    margin: 16px 20px; }
+  .section-inner {
+    width: auto;
+    margin: 0;
+    padding: 0 8px; }
+  .card-item__img {
+    width: 368px;
+    height: 256px; }
+  .input-container {
+    margin-bottom: 55px;
+    margin-top: 55px; }
+  .section-footer {
+    margin-top: 32px; }
+  .footer-nav__item {
+    width: 200px; }
+  .conditions__item {
+    width: 200px; } }

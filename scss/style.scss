@@ -144,7 +144,9 @@ a:hover {
     background: #262626;
 }
 .footer-nav {
-   
+   &__white-logo {
+       padding-bottom: 40px;
+   }
     &__list {
         margin-top: 30px;
         
@@ -157,6 +159,9 @@ a:hover {
         color: white;
         font-size: 13px;
         line-height: 16px;
+        &--green {
+            color: #49A144; 
+        }
     }
     &__item {
         //flex: 1 1 308px;
@@ -252,3 +257,35 @@ a:hover {
  
 }
 // /FOOTER
+
+@media(max-width: 768px){
+    .header-login {
+        margin: 16px 20px;
+    }
+    .section-inner {
+        width: auto;
+        margin: 0;
+        padding: 0 8px;
+    }
+    .card-item__img {
+        width: 368px;
+        height: 256px;
+    }
+    .input-container {
+        margin-bottom: 55px;
+        margin-top: 55px;
+    }
+    .section-footer {
+        margin-top: 32px;
+    }
+    .footer-nav {
+        &__item {
+            width: 200px;
+        }
+    }
+    .conditions{
+        &__item {
+            width: 200px;
+        }
+    }
+}
