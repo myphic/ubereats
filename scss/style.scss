@@ -42,10 +42,10 @@ ul {
     border: 0;
     outline: none;
     width: 100%;
-}
-.input-container {
     border-bottom: 1px solid #757575;
     opacity: 30%;
+}
+.input-container {
     margin-bottom: 55px;
     margin-top: 55px;
 }
@@ -172,21 +172,38 @@ a:hover {
         flex-direction: column;
         justify-content: space-between;
         padding-bottom: 45px;
+        
     }
     &__select {
-        width: 227px;
+        width: 100%;
         height: 40px;
         background: #3B3B3B;
         color: white;
         font-size: 13px;
         line-height: 16px;
+        text-indent: 25%;
     }
+
     &__white-logo {
         padding-top: 55px;
     }
     & hr {
         opacity: 40%;
         height: 1px;
+    }
+}
+
+.select-wrapper {
+    position: relative;
+    &:before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        background: url("../img/Shape.svg");
+        top:50%;
+        transform:translate(100%, -50%);
+        
     }
 }
 
@@ -258,18 +275,25 @@ a:hover {
 }
 // /FOOTER
 
-@media(max-width: 768px){
+@media (max-width: 768px){
     .header-login {
-        margin: 16px 20px;
+        margin: 16px 0px;
     }
     .section-inner {
         width: auto;
         margin: 0;
         padding: 0 8px;
     }
+    .card-list {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    .card-item {
+        flex: 0 0 47%;
+    }
     .card-item__img {
-        width: 368px;
-        height: 256px;
+        max-width: 100%;
+        display: block;
     }
     .input-container {
         margin-bottom: 55px;
@@ -286,6 +310,39 @@ a:hover {
     .conditions{
         &__item {
             width: 200px;
+        }
+    }
+}
+@media(max-width: 400px) {
+    .basket {
+        display: none;
+    }
+    
+    .card-item {
+        flex: 0 0 100%;
+    }   
+    .card-item__img {
+        max-width: 100%;
+    }
+    .conditions {
+        margin-top: 32px;
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+        &__item {
+            padding-top: 0px;
+            padding-bottom: 24px;
+        }
+    }
+    .downloads {
+        &__applestore {
+            width: 108px;
+            height: 34px;
+        }
+        &__googleplay {
+            width: 124px;
+            height: 36px;
         }
     }
 }
