@@ -1,11 +1,6 @@
 @import '../css/normalize.scss';
 //Mixins
-@mixin font-lato {
-font-family: 'Lato', sans-serif;
-}
-@mixin font-montserrat{
-font-family: 'Montserrat', sans-serif;
-}
+
 @mixin font-roboto{
     font-family: 'Roboto', sans-serif;
 }
@@ -49,6 +44,7 @@ ul {
     margin-bottom: 55px;
     margin-top: 55px;
 }
+
 // /COMMON
 .section-header {
     box-shadow: 0 3px 4px #F2F2F2;
@@ -197,10 +193,12 @@ a:hover {
     position: relative;
     &:before {
         content: "";
-        width: 15px;
-        height: 15px;
+        width: 16px;
+        height: 16px;
         position: absolute;
         background: url("../img/Shape.svg");
+        
+        background-repeat: no-repeat;
         top:50%;
         transform:translate(100%, -50%);
         

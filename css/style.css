@@ -456,10 +456,11 @@ a:hover {
   position: relative; }
   .select-wrapper:before {
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     position: absolute;
     background: url("../img/Shape.svg");
+    background-repeat: no-repeat;
     top: 50%;
     transform: translate(100%, -50%); }
 
